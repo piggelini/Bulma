@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <script src="https://kit.fontawesome.com/456b35c6d6.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="m-4">
+    <header>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="https://bulma.io/documentation/" target="_blank">
+                    <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+                </a>
+
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item">
+                        Home
+                    </a>
+
+                    <a class="navbar-item">
+                        Documentation
+                    </a>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            More
+                        </a>
+
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item">
+                                About
+                            </a>
+                            <a class="navbar-item">
+                                Jobs
+                            </a>
+                            <a class="navbar-item">
+                                Contact
+                            </a>
+                            <hr class="navbar-divider">
+                            <a class="navbar-item">
+                                Report an issue
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-primary">
+                                <strong>Sign up</strong>
+                            </a>
+                            <a class="button is-light">
+                                Log in
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <h2>Ovan visas en navbar med en liten drop down meny.</h2>
+    </header>
+    <h2>Nedan till vänster visas en aside meny.</h2>
+    <div class="columns">
+        <aside class="menu column is-one-quarter">
+            <p class="menu-label">
+                General
+            </p>
+            <ul class="menu-list">
+                <li><a>Dashboard</a></li>
+                <li><a>Customers</a></li>
+            </ul>
+            <p class="menu-label">
+                Administration
+            </p>
+            <ul class="menu-list">
+                <li><a>Team Settings</a></li>
+                <li>
+                    <a class="is-active">Manage Your Team</a>
+                    <ul>
+                        <li><a>Members</a></li>
+                        <li><a>Plugins</a></li>
+                        <li><a>Add a member</a></li>
+                    </ul>
+                </li>
+                <li><a>Invitations</a></li>
+                <li><a>Cloud Storage Environment Settings</a></li>
+                <li><a>Authentication</a></li>
+            </ul>
+            <p class="menu-label">
+                Transactions
+            </p>
+            <ul class="menu-list">
+                <li><a>Payments</a></li>
+                <li><a>Transfers</a></li>
+                <li><a>Balance</a></li>
+            </ul>
+        </aside>
+
+        <!-- <h2>Bulma är kompatibel med iconer från bl.a. font awesome</h2>
+        <span class="icon">
+            <i class="fas fa-home"></i>
+        </span> -->
+
+        <section class="section column is-three-quarters">
+            <div class="container">
+                <h1 class="title">
+                    Bulma Demo
+                </h1>
+                <p class="subtitle">
+                    Exempel på en hemsida med ramverket <strong>Bulma</strong>!
+                </p>
+
+                <a class="button is-info is-large" href="https://bulma.io">Bulma page</a>
+                <a class="button is-rounded is-primary is-large" href="https://youtu.be/MchBPICewgs">Getting
+                    started!</a>
+
+                <h2> Tiles kan enkelt läggas till för att strukturera upp innehåll på sidan. </h2>
+
+                <div class="tile is-ancestor">
+                    <div class="tile is-vertical is-8">
+                        <div class="tile">
+                            <div class="tile is-parent is-vertical">
+                                <article class="tile is-child notification is-primary">
+                                    <p class="title">Vertical...</p>
+                                    <p class="subtitle">Top tile</p>
+                                </article>
+                                <article class="tile is-child notification is-warning">
+                                    <p class="title">...tiles</p>
+                                    <p class="subtitle">Bottom tile</p>
+                                </article>
+                            </div>
+                            <div class="tile is-parent">
+                                <article class="tile is-child notification is-info">
+                                    <p class="title">Middle tile</p>
+                                    <p class="subtitle">With an image</p>
+                                    <figure class="image is-4by3">
+                                        <img
+                                            src="https://www.speedofgossip.com/wp-content/uploads/2021/06/1511194376-cavachon-puppy-christmas.jpg">
+                                    </figure>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="tile is-parent">
+                            <article class="tile is-child notification is-danger">
+                                <p class="title">Wide tile</p>
+                                <p class="subtitle">Aligned with the right tile</p>
+                                <div class="content">
+                                    <!-- Content -->
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification is-success">
+                            <div class="content">
+                                <p class="title">Bulma video!</p>
+                                <figure class="image is-16by9">
+                                    <iframe class="has-ratio" src="https://www.youtube.com/embed/MchBPICewgs"
+                                        frameborder="0"></iframe>
+                                </figure>
+                                <div class="content">
+                                    <!-- Content -->
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <div class="columns is-vcentered is-centered">
+        <article class="panel is-primary column is-one-third">
+            <h2>Nedan visas en panel med sökfunktion som kan användas till att filtrera innehåll.</h2>
+            <br>
+            <p class="panel-heading">
+                Primary
+            </p>
+            <p class="panel-tabs">
+                <a class="is-active">All</a>
+                <a>Public</a>
+                <a>Private</a>
+                <a>Sources</a>
+                <a>Forks</a>
+            </p>
+            <div class="panel-block">
+                <p class="control has-icons-left">
+                    <input class="input is-primary" type="text" placeholder="Search">
+                    <span class="icon is-left">
+                        <i class="fas fa-search" aria-hidden="true"></i>
+                    </span>
+                </p>
+            </div>
+            <a class="panel-block is-active">
+                <span class="panel-icon">
+                    <i class="fas fa-book" aria-hidden="true"></i>
+                </span>
+                bulma
+            </a>
+            <a class="panel-block">
+                <span class="panel-icon">
+                    <i class="fas fa-book" aria-hidden="true"></i>
+                </span>
+                marksheet
+            </a>
+            <a class="panel-block">
+                <span class="panel-icon">
+                    <i class="fas fa-book" aria-hidden="true"></i>
+                </span>
+                minireset.css
+            </a>
+            <a class="panel-block">
+                <span class="panel-icon">
+                    <i class="fas fa-book" aria-hidden="true"></i>
+                </span>
+                jgthms.github.io
+            </a>
+        </article>
+
+        <div class="column is-one-third">
+            <h2> Nedan är ett komplett formulär. </h2>
+            <br>
+            <div class="field">
+                <label class="label">Name</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Text input">
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Username</label>
+                <div class="control has-icons-left has-icons-right">
+                    <input class="input is-success" type="text" placeholder="Text input" value="Nackademin">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-user"></i>
+                    </span>
+                    <span class="icon is-small is-right">
+                        <i class="fas fa-check"></i>
+                    </span>
+                </div>
+                <p class="help is-success">This username is available</p>
+            </div>
+
+            <div class="field">
+                <label class="label">Email</label>
+                <div class="control has-icons-left has-icons-right">
+                    <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    <span class="icon is-small is-right">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </span>
+                </div>
+                <p class="help is-danger">This email is invalid</p>
+            </div>
+
+            <div class="field">
+                <label class="label">Subject</label>
+                <div class="control">
+                    <div class="select">
+                        <select>
+                            <option>Select dropdown</option>
+                            <option>With options</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Message</label>
+                <div class="control">
+                    <textarea class="textarea" placeholder="Textarea"></textarea>
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="control">
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        I agree to the <a href="#">terms and conditions</a>
+                    </label>
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="control">
+                    <label class="radio">
+                        <input type="radio" name="question">
+                        Yes
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="question">
+                        No
+                    </label>
+                </div>
+            </div>
+
+            <div class="field is-grouped">
+                <div class="control">
+                    <button class="button is-link">Submit</button>
+                </div>
+                <div class="control">
+                    <button class="button is-link is-light">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
